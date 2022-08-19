@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank website</title>
+</head>
+<body>
+    <header>
+        <h1 class="font-bold text-5xl text-center">Welcome to <span class="text-fuchsia-600">Bank Asia</span></h1>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 w-3/4 gap-4 mx-auto mt-8">
+                <div class="bg-pink-400 rounded-xl p-8 text-4xl text-white">
+                    <h1>Deposit</h1>
+                    <p>$<span id="deposit-total">00</span> </p>
+                </div>
+                
+                <div class="bg-indigo-400 rounded-xl p-8 text-4xl text-white">
+                    <h1>Withdraw</h1>
+                    <p>$<span id="withdraw-total">00</span> </p>
+                </div>
+                
+                <div class="bg-lime-500 rounded-xl p-8 text-4xl text-white">
+                    <h1>Balance</h1>
+                    <p>$<span id="balance-total">1250</span> </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 w-3/4 mt-8 mx-auto gap-4">
+                <div class="text-xl bg-purple-400 rounded-xl p-8 text-white">
+                    <h1>Please Enter The Amount To Deposit</h1>
+                    <input id="deposit-amount" class="my-4 text-black" type="number"><br>
+                    <button id="btn-deposit" class=" hover:bg-blue-900 bg-yellow-600 px-5 py-2 rounded-xl">Deposit</button>
+                </div>
+                <div class="text-xl bg-gray-400 rounded-xl p-8 ">
+                    <h1>Please Enter The Amount To Withdraw</h1>
+                    <input id="withdraw-amount" class="my-4 text-black" type="number"><br>
+                    <button id="btn-withdraw" class=" hover:bg-blue-900 bg-yellow-600 px-5 py-2 rounded-xl">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
